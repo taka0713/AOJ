@@ -1,9 +1,0 @@
-山
-
-<script>
-const ary = [1819,2003,876,2840,1723,1673,3776,2848,1592,922];
-const f = function (a, b) {
-    return b - a
-}
-console.log(ary.sort(f));
-</script>
