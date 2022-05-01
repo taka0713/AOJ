@@ -1,19 +1,13 @@
-<script>
-const number = 0<a,b ;{
-    if(a+b<10){
-        console.log("1");
-    }else if(a+b<100){
-        console.log("2");
-    }else if(a+b<1000){
-        console.log("3");
-    }else if(a+b<10000){
-        console.log("4");
-    }else if(a+b<100000){
-        console.log("5");
-    }else if(a+b<1000000){
-        console.log("6");
-    }else {
-        console.log("7");
+let sample_input = require('fs').readFileSync('/dev/stdin', 'utf8');
+let numbers = (sample_input.trim()).split("\n");
+let n = numbers.shift();
+
+let a, b, c = 0;
+for (let i = 0; i < n; i++ ) {
+    [a,b,c] = numbers[i].split(' ');
+    if(a*a+b*b===c*c){
+        console.log("YES"+"\n");
+    }else{
+        console.log("NO"+"\n");
     }
 }
-</script>
