@@ -5,9 +5,17 @@ let n = numbers.shift();
 let a, b, c = 0;
 for (let i = 0; i < n; i++ ) {
     [a,b,c] = numbers[i].split(' ');
-    if(a*a+b*b===c*c){
-        console.log("YES"+"\n");
+    const num = [];
+    num.push(a);
+    num.push(b);
+    num.push(c);
+    num.sort(function(a, b) {
+        return a - b;
+    });
+
+    if(num[0]*num[0]+num[1]*num[1]===num[2]*num[2]){
+        console.log("YES");
     }else{
-        console.log("NO"+"\n");
+        console.log("NO");
     }
 }
