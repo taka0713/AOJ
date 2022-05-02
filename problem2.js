@@ -1,4 +1,3 @@
-<script>
 const number = 0<a,b ;{
     if(a+b<10){
         console.log("1");
@@ -16,4 +15,3 @@ const number = 0<a,b ;{
         console.log("7");
     }
 }
-</script>
