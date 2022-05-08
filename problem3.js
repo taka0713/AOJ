@@ -4,16 +4,9 @@ let n = numbers.shift();
 
 let a, b, c = 0;
 for (let i = 0; i < n; i++ ) {
-    [a,b,c] = numbers[i].split(' ');
-    const num = [];
-    num.push(a);
-    num.push(b);
-    num.push(c);
-    num.sort(function(a, b) {
-        return a - b;
-    });
+    [a,b,c] = numbers[i].split(' ').sort();
 
-    if(num[0]*num[0]+num[1]*num[1]===num[2]*num[2]){
+    if (a * a + b * b === c * c) {
         console.log("YES");
     }else{
         console.log("NO");
