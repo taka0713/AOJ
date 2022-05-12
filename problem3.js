@@ -1,6 +1,6 @@
-let sample_input = require('fs').readFileSync('/dev/stdin', 'utf8');
-let numbers = (sample_input.trim()).split("\n");
-let n = numbers.shift();
+let n = require('fs').readFileSync('/dev/stdin', 'utf8');
+let numbers = (n.trim()).split("\n");
+n = numbers.shift();
 
 let a, b, c = 0;
 for (let i = 0; i < n; i++ ) {

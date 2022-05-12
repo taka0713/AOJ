@@ -1,5 +1,5 @@
-let sample_input = require('fs').readFileSync('/dev/stdin', 'utf8');
-let numbers = (sample_input.trim()).split("\n").map(Number);
+let n = require('fs').readFileSync('/dev/stdin', 'utf8');
+let numbers = (n.trim()).split("\n").map(Number);
 const f = function (a, b) {
     return b - a
 }
