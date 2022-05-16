@@ -13,6 +13,5 @@ for(n = 0 ; n < numbers.length; n++){
                 }
             }
         }
-        
         console.log(c);
 }
