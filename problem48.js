@@ -1,29 +1,29 @@
 let n = require('fs').readFileSync('/dev/stdin', 'utf8');
-let numbers = (n.trim()).split("\n");
+let numbers = (n.trim()).split("\n").map(Number);
 
 for (let i = 0; i < numbers.length; i++ ) {
 
-    if (n = 0 <= 48.00 ) {
+    if (0 <= n && n <=48.00 ) {
         console.log("light fly");
-    }else if (n = 48.01 <= 51.00){
+    }else if (48.01 <= n && n <= 51.00){
         console.log("fly");
-    }else if (n = 51.01 <= 54.00){
+    }else if (51.01 <= n && n <= 54.00){
         console.log("bantam");
-    }else if (n = 54.01 <= 57.00){
+    }else if (54.01 <= n && n <= 57.00){
         console.log("feather");
-    }else if (n = 57.01 <= 60.00){
+    }else if (57.01 <= n && n <= 60.00){
         console.log("light");
-    }else if (n = 60.01 <= 64.00){
+    }else if (60.01 <= n && n <= 64.00){
         console.log("light welter");
-    }else if (n = 64.01 <= 69.00){
+    }else if (64.01 <= n && n <= 69.00){
         console.log("welter");
-    }else if (n = 69.01 <= 75.00){
+    }else if (69.01 <= n && n <= 75.00){
         console.log("light middle");
-    }else if (n = 75.01 <= 81.00){
+    }else if (75.01 <= n && n <= 81.00){
         console.log("middle");
-    }else if (n = 81.01 <= 91.00){
+    }else if (81.01 <= n && n <= 91.00){
         console.log("light heavy");
-    }else (n = 91.01 < Infinity){
+    }else{(91.01 <= n)
         console.log("heavy");
     }
 }
