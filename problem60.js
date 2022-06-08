@@ -1,8 +1,8 @@
 let n = require('fs').readFileSync('/dev/stdin', 'utf8');
-let numbers = (n.trim()).split("\n");
+let numbers = (n.trim());
 
 let a, b, c = 0;
-for (let i = 0; i < n; i++ ) {
+for (let i = 0; i < numbers.length; i++ ) {
     [a,b,c] = numbers[i].split(' ');
 
     if (a + b < 16){
